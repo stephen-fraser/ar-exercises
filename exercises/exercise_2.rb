@@ -6,3 +6,9 @@ puts "----------"
 
 # Your code goes here ...
 
+@store1 = Store.find_by(id: 1)
+@store2 = Store.find_by(id: 2)
+@store1.name = "Delta"
+@store1.save
+
+p @store1
