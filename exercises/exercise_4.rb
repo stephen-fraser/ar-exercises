@@ -31,7 +31,7 @@ Store.create(
 
 puts Store.count
 
-@mens_stores = Store.where('mens_apparel: true')
+@mens_stores = Store.where('mens_apparel = true')
 
 for store in @mens_stores do
   puts "Store Name: #{store.name} | Annual Rev: #{store.annual_revenue}"
